@@ -12,7 +12,8 @@
 # -----------------
 
 /build
-/artifact
+/packages
+/installers
 
 # ROMs
 # -----------------

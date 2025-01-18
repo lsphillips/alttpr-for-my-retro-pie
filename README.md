@@ -54,13 +54,13 @@ First, to build a bundle in the `build` directory that is ready to be packaged, 
 npm run build
 ```
 
-Next, to create an arm64 Linux package in the `artifact` directory, run this command:
+Next, to create an arm64 Linux package in the `packages` directory, run this command:
 
 ``` bash
 npm run package
 ```
 
-Finally, to create a `.deb` installer in the `artifact` directory, run this command:
+Finally, to create a `.deb` installer in the `installers` directory, run this command:
 
 ``` bash
 npm run installer

@@ -60,8 +60,8 @@
         "build" : "node build.js building",
         "develop" : "node build.js developing",
         "start" : "electron . --config=config.json",
-        "package" : "electron-packager ./build --arch arm64 --platform linux --out artifact",
-        "installer" : "electron-installer-debian --src ./artifact/alttpr-for-my-retro-pi-linux-arm64 --dest ./artifact --arch arm64"
+        "package" : "electron-packager ./build --arch arm64 --platform linux --out ./packages",
+        "installer" : "electron-installer-debian --src ./packages/alttpr-for-my-retro-pi-linux-arm64 --dest ./installers --arch arm64"
     },
 
     "engines" :

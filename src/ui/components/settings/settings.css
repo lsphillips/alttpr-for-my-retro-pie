@@ -1,0 +1,60 @@
+.settings
+{
+	box-sizing: border-box;
+	display: flex;
+	flex-flow: row nowrap;
+	column-gap: 15px;
+	align-items: center;
+	padding: 10px;
+	font-size: 12px;
+	background: #ccc;
+	border-top: 1px solid #999;
+}
+
+.settings__player
+{
+	position: relative;
+	width: 32px;
+	height: 32px;
+	margin: 0 -5px 0 0;
+}
+
+.settings__heart-color
+{
+	--size: 0.5;
+
+	position: absolute;
+	bottom: 0;
+	left: 4px;
+	width: 24px;
+	height: 8px;
+}
+
+.settings__gameplay
+{
+	display: contents;
+	padding: 0;
+	margin: 0;
+}
+
+.settings__gameplay-setting
+{
+	/* Here to remind that this is here. */
+}
+
+.settings__gameplay-setting-name
+{
+	display: inline;
+	padding: 0;
+	margin: 0;
+	font-weight: bold;
+
+	&::after { content: ':' }
+}
+
+.settings__gameplay-setting-value
+{
+	display: inline;
+	padding: 0;
+	margin: 0 0 0 5px;
+}

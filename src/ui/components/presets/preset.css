@@ -1,0 +1,113 @@
+@keyframes preset-glow
+{
+	0% {
+		filter: drop-shadow(0 0 4px #509010)
+	}
+
+	50% {
+		filter: drop-shadow(0 0 2px #509010)
+	}
+
+	100% {
+		filter: drop-shadow(0 0 4px #509010)
+	}
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.preset
+{
+	display: block;
+	height: 100%;
+	color: unset;
+	text-decoration: none;
+	cursor: pointer;
+
+	&:focus { outline: 0 }
+}
+
+.preset__info
+{
+	box-sizing: border-box;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	height: 100%;
+	padding: 0 15px;
+	column-gap: 10px;
+	background: #f8f9fa;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+
+	.preset:focus &
+	{
+		border-color: #509010;
+		background: #fff;
+		animation: preset-glow 4s linear infinite;
+	}
+}
+
+.preset__goal
+{
+	flex: 0 0 50px;
+	height: 50px;
+	margin: 0 10px 0 0;
+	text-indent: -9999px;
+}
+
+.preset__name-and-gameplay
+{
+	flex: 1 1 auto;
+}
+
+.preset__name
+{
+	padding: 0;
+	margin: 0 0 5px;
+	font-size: 16px;
+}
+
+.preset__gameplay-settings
+{
+	display: flex;
+	flex-flow: row nowrap;
+	column-gap: 15px;
+	justify-content: flex-start;
+	padding: 0;
+	margin: 0;
+	font-size: 80%;
+}
+
+.preset__gameplay-setting
+{
+	/* Here to remind that this is here. */
+}
+
+.preset__gameplay-setting-name
+{
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+	font-weight: bold;
+
+	&::after { content: ':' }
+}
+
+.preset__gameplay-setting-value
+{
+	display: inline-block;
+	padding: 0;
+	margin: 0 0 0 5px;
+}
+
+.preset__ganon-requirement,
+.preset__ganon-tower-requirement,
+.preset__dungeon-item-shuffle,
+.preset__hints,
+.preset__enemy-difficulty,
+.preset__item-difficulty
+{
+	flex: 0 0 32px;
+	height: 32px;
+	text-indent: -9999px;
+}

@@ -1,0 +1,39 @@
+@keyframes button-glow
+{
+	0% {
+		background: #78b820;
+	}
+
+	50% {
+		background: #509010;
+	}
+
+	100% {
+		background: #78b820;
+	}
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.button
+{
+	display: block;
+	padding: 10px 20px;
+	margin: 0;
+	color: #fff;
+	font-family: inherit;
+	font-size: 14px;
+	font-weight: bold;
+	letter-spacing: inherit;
+	background: #78b820;
+	border: 0;
+	border-radius: 3px;
+	cursor: pointer;
+
+	&:hover,
+	&:focus
+	{
+		outline: 0;
+		animation: button-glow 6s linear infinite;
+	}
+}

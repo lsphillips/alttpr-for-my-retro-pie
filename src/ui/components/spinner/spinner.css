@@ -1,0 +1,47 @@
+@keyframes triforce-glow
+{
+	0% {
+		opacity: 100%;
+	}
+
+	100% {
+		opacity: 0%;
+	}
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.spinner
+{
+	opacity: 0;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.spinner--visible { opacity: 1 }
+
+.spinner__triforce
+{
+	display: block;
+	width: 100px;
+	margin: 0 auto;
+}
+
+.spinner__triforce-power-piece,
+.spinner__triforce-courage-piece,
+.spinner__triforce-wisdom-piece
+{
+	fill: #f8d000;
+	animation: 1.5s triforce-glow linear infinite;
+}
+
+.spinner__triforce-power-piece   { animation-delay: 0s   }
+.spinner__triforce-courage-piece { animation-delay: 0.5s }
+.spinner__triforce-wisdom-piece  { animation-delay: 1s   }
+
+.spinner__text
+{
+	text-align: center;
+
+	&:after { content: '...' }
+}

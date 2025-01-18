@@ -1,0 +1,94 @@
+.result
+{
+	/* Here to remind that this is here. */
+}
+
+.result__title
+{
+	display: block;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+
+	&::after
+	{
+		display: block;
+		width: 200px;
+		margin: 10px auto;
+		border-bottom: 2px solid #ccc;
+		content: '';
+	}
+}
+
+.result__title-icon
+{
+	--size: 2;
+
+	display: block;
+	width: 64px;
+	height: 64px;
+	margin: 0 auto;
+}
+
+.result__metadata
+{
+	display: flex;
+	flex-flow: row nowrap;
+	column-gap: 15px;
+	justify-content: center;
+	padding: 0;
+	margin: 20px 0 10px;
+	font-size: 14px;
+}
+
+.result__metadatum
+{
+	/* Here to remind that this is here. */
+}
+
+.result__metadatum-name
+{
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+	font-weight: bold;
+
+	&::after { content: ':' }
+}
+
+.result__metadatum-value
+{
+	display: inline-block;
+	padding: 0;
+	margin: 0 0 0 5px;
+}
+
+.result__qr-code
+{
+	display: block;
+	width: 232px;
+	height: 232px;
+	padding: 10px;
+	margin: 0 auto;
+	background: #f8f9fa;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+}
+
+.result__bookmark
+{
+	margin: 10px 0 20px;
+	padding: 0;
+	font-size: 14px;
+	text-align: center;
+}
+
+.result__permalink
+{
+	/* Here to remind that this is here. */
+}
+
+.result__play
+{
+	margin: 0 auto;
+}

@@ -1,0 +1,25 @@
+# Dependencies
+# -----------------
+
+/node_modules
+
+# Assets
+# -----------------
+
+/src/views/assets
+
+# Builds
+# -----------------
+
+/build
+/artifact
+
+# ROMs
+# -----------------
+
+*.sfc
+
+# Config
+# -----------------
+
+config.json

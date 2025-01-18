@@ -1,0 +1,66 @@
+{
+	"baseRomPath" : "path/to/alttp/rom.sfc",
+	"targetDirectoryPath" : ".",
+	"seedPresets" : [
+		{
+			"name" : "Preset #1",
+			"goal" : "Standard",
+			"crystalsForGanon" : 7,
+			"crystalsForTower" : 7,
+			"dungeonItemShuffling" : "Standard",
+			"itemPool" : "Hard",
+			"itemFunctionality" : "Expert",
+			"enemyHealth" : "Hard",
+			"enemyDamage" : "Shuffled"
+		},
+		{
+			"name" : "Preset #2",
+			"goal" : "FastGanon",
+			"crystalsForGanon" : 6,
+			"crystalsForTower" : 1,
+			"dungeonItemShuffling" : "MapsCompasses"
+		},
+		{
+			"name" : "Preset #3",
+			"goal" : "Dungeons",
+			"crystalsForGanon" : 5,
+			"crystalsForTower" : 2,
+			"dungeonItemShuffling" : "Standard"
+		},
+		{
+			"name" : "Preset #4",
+			"goal" : "Pedestal",
+			"crystalsForGanon" : 4,
+			"crystalsForTower" : 3,
+			"dungeonItemShuffling" : "MapsCompassesSmallKeys"
+		},
+		{
+			"name" : "Preset #5",
+			"goal" : "TriforceHunt",
+			"crystalsForGanon" : 3,
+			"crystalsForTower" : 4,
+			"dungeonItemShuffling" : "Standard"
+		},
+		{
+			"name" : "Preset #6",
+			"goal" : "GanonHunt",
+			"crystalsForGanon" : 2,
+			"crystalsForTower" : 5,
+			"dungeonItemShuffling" : "Keysanity"
+		},
+		{
+			"name" : "Preset #7",
+			"goal" : "Completionist",
+			"crystalsForGanon" : 1,
+			"crystalsForTower" : 6,
+			"dungeonItemShuffling" : "Standard"
+		},
+		{
+			"name" : "Preset #8",
+			"goal" : "Completionist",
+			"crystalsForGanon" : 1,
+			"crystalsForTower" : 6,
+			"dungeonItemShuffling" : "Standard"
+		}
+	]
+}

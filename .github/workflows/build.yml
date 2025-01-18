@@ -74,5 +74,8 @@ jobs:
       - name: Create Installer
         run: npm run installer
 
-      - name: Temporary Debug Step
-        run: ls installers
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: alttpr-for-my-retro-pi
+          path: ./installers

@@ -30,7 +30,7 @@ Finally, to run the application, run this command:
 npm run start
 ```
 
-If you perform changes renderer process code then press the `F5` key to reload and see those changes reflected in the application. However any changes made to main process code or preload scripts will require you to restart the application.
+If you perform changes to renderer process code then press the `F5` key to reload and see those changes reflected in the application. However any changes made to main process code or preload scripts will require you to restart the application.
 
 ### Code Quality
 
@@ -42,7 +42,7 @@ npm run lint
 
 ### Dependencies
 
-All dependencies that are used for building and testing should be added as a development dependency; this includes dependencies required by the UI aspects of the project as they are bundled into the artifact.
+All dependencies that are used for building and testing should be added as a development dependency; this includes dependencies required by the renderer process as they are bundled into the artifact.
 
 Only dependencies required by the main process should be made a production dependency to minimize the final package size.
 

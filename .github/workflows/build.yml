@@ -73,3 +73,6 @@ jobs:
 
       - name: Create Installer
         run: npm run installer
+
+      - name: Temporary Debug Step
+        run: ls installers

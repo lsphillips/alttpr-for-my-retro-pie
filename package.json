@@ -5,7 +5,7 @@
 
     "type" : "module",
 
-    "description" : "An Electron powered client for ALTTPR that is designed to work with RetroPie making randomizing ROMS for pre-configured presets a couple of controller button presses.",
+    "description" : "An Electron powered client for ALTTPR that is designed to work with RetroPie making randomizing ROMS for configured presets a couple of controller button presses.",
 
     "author" : "Luke Phillips",
 

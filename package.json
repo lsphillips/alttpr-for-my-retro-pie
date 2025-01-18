@@ -5,7 +5,7 @@
 
     "type" : "module",
 
-    "description" : "A client, built with Retro Pi in mind, to generate ALTTPR ROMs.",
+    "description" : "An Electron powered client for ALTTPR that is designed to work with RetroPie making randomizing ROMS for pre-configured presets a couple of controller button presses.",
 
     "author" : "Luke Phillips",
 

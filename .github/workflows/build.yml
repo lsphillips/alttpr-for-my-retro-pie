@@ -74,6 +74,9 @@ jobs:
       - name: Create Installer
         run: npm run installer
 
+      - name: Debug step
+        run: dpkg-architecture -L
+
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:

@@ -61,7 +61,7 @@
         "develop" : "node build.js developing",
         "start" : "electron . --config=config.json",
         "package" : "electron-packager ./build --arch armv7l --platform linux --out ./packages",
-        "installer" : "electron-installer-debian --src ./packages/alttpr-for-my-retro-pi-linux-armv7l --dest ./installers --arch armhf"
+        "installer" : "electron-installer-debian --src ./packages/alttpr-for-my-retro-pi-linux-armv7l --dest ./installers --arch armhf --compression xz"
     },
 
     "engines" :

@@ -1,4 +1,8 @@
 import {
+	resolve,
+	dirname
+} from 'node:path';
+import {
 	readFile,
 	access
 } from 'node:fs/promises';
@@ -19,6 +23,15 @@ import {
 	ok,
 	fail
 } from '../utils/result.js';
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+function resolvePathRelativeToConfig (path, config)
+{
+	return resolve(
+		dirname(config), path
+	);
+}
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -60,7 +73,9 @@ export async function getConfig (path)
 		...settings
 	} = config;
 
-	const [baseRom, baseRomError] = await getBaseRom(baseRomPath);
+	const [baseRom, baseRomError] = await getBaseRom(
+		resolvePathRelativeToConfig(baseRomPath, path)
+	);
 
 	if (baseRomError)
 	{
@@ -74,18 +89,22 @@ export async function getConfig (path)
 		return fail(presetError);
 	}
 
+	const targetDirectory = resolvePathRelativeToConfig(targetDirectoryPath, path);
+
 	try
 	{
-		await access(targetDirectoryPath);
+		await access(targetDirectory);
 	}
 	catch
 	{
-		return fail('The target directory does not exist.');
+		return fail(`The target directory '${targetDirectory}' does not exist.`);
 	}
+
+	console.log(baseRom, targetDirectory);
 
 	return ok({
 		baseRom,
-		targetDirectoryPath,
+		targetDirectory,
 		presets : presets.map(parsePreset),
 		settings : parseSettings(settings)
 	});

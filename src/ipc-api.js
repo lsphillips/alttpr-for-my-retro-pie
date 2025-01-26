@@ -23,10 +23,10 @@ export function setupIpcApi ({
 	pathToConfig
 })
 {
-	let presets             = null;
-	let settings            = null;
-	let baseRom             = null;
-	let targetDirectoryPath = null;
+	let presets         = null;
+	let settings        = null;
+	let baseRom         = null;
+	let targetDirectory = null;
 
 	ipcMain.handle('setup', async () =>
 	{
@@ -37,7 +37,7 @@ export function setupIpcApi ({
 			return fail(error);
 		}
 
-		({ presets, settings, baseRom, targetDirectoryPath } = config);
+		({ presets, settings, baseRom, targetDirectory } = config);
 
 		return ok({
 			presets, settings
@@ -62,7 +62,7 @@ export function setupIpcApi ({
 			game
 		} = result;
 
-		const pathToRom = join(targetDirectoryPath, 'alttpr.sfc');
+		const pathToRom = join(targetDirectory, 'alttpr.sfc');
 
 		try
 		{

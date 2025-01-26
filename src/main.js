@@ -57,6 +57,13 @@ function setupWindow ()
 	return window;
 }
 
+function getPathToConfigFile ()
+{
+	return join(
+		app.getPath('userData'), 'config.json'
+	);
+}
+
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 app.whenReady()
@@ -64,7 +71,7 @@ app.whenReady()
 	.then(async () =>
 	{
 		setupIpcApi({
-			pathToConfig : app.commandLine.getSwitchValue('config')
+			pathToConfig : getPathToConfigFile()
 		});
 
 		setupWindow();

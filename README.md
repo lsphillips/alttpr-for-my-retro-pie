@@ -10,7 +10,15 @@ Working on it.
 
 ## Development
 
-First copy the contents of the `config.sample.json` file into a `config.json` file and change the `baseRomPath` property value to a path to a `Zelda no Densetsu: Kamigami no Triforce v1.0` ROM on your machine.
+First copy the contents of the `config.sample.json` file into a `config.json` file and change the `baseRomPath` property value to a absolute path to a `Zelda no Densetsu: Kamigami no Triforce v1.0` ROM on your machine.
+
+Next place the resulting `config.json` file in the user data location for this application:
+
+| System  | Location                                                   |
+| ------- | ---------------------------------------------------------- |
+| Windows | `%APPDATA%/alttpr-for-my-retro-pi/config.json`             |
+| Linux   | `~/.config/alttpr-for-my-retro-pi/config.json`             |
+| Mac     | `~/Library/Application/alttpr-for-my-retro-pi/config.json` |
 
 Next, to start a process that will watch for renderer process code changes, run this command:
 

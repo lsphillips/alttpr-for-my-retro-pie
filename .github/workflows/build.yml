@@ -71,6 +71,10 @@ jobs:
       - name: Package the Build
         run: npm run package
 
+      - name: Inspect package
+        working-directory: packages/alttpr-for-my-retro-pi-linux-arm64
+        run: ls -R
+
       - name: Create Installer
         run: npm run installer
 

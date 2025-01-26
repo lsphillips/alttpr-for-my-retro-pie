@@ -11,7 +11,7 @@ import {
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 async function buildInterface ({
-	developing
+	developing = false
 } = {})
 {
 	const config = {
@@ -75,11 +75,6 @@ async function buildApp ()
 		platform : 'node',
 
 		format : 'esm',
-
-		loader : {
-			'.html' : 'file',
-			'.cjs' : 'file'
-		},
 
 		packages : 'external',
 
@@ -152,10 +147,8 @@ switch (
 
 	case 'building' :
 
-		await Promise.all([
-			buildInterface(),
-			buildApp()
-		]);
+		await buildInterface();
+		await buildApp();
 
 		break;
 

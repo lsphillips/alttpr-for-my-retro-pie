@@ -93,7 +93,7 @@ async function buildApp ()
 			'src/preload.cjs'
 		],
 
-		outdir : 'build',
+		outfile : 'build/preload.cjs',
 
 		bundle : true,
 

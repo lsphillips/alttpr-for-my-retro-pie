@@ -2,11 +2,11 @@
 
 rp_module_id="alttpr-for-my-retro-pie"
 rp_module_desc="A client for ALTTPR that makes randomizing ROMS for configured presets a couple of button presses."
-rp_module_licence="https://github.com/lsphillips/alttpr-for-my-retro-pie/blob/main/LICENSE.txt"
+rp_module_licence="MIT https://github.com/lsphillips/alttpr-for-my-retro-pie/blob/main/LICENSE.txt"
 rp_module_section="exp"
 
 function depends_alttpr-for-my-retro-pie() {
-    getDepends xorg matchbox
+	getDepends xorg matchbox
 }
 
 function install_bin_alttpr-for-my-retro-pie() {

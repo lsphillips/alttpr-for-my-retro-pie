@@ -1,5 +1,5 @@
 {
-    "name" : "alttpr-for-my-retro-pi",
+    "name" : "alttpr-for-my-retro-pie",
 
     "version" : "1.0.0",
 
@@ -9,17 +9,17 @@
 
     "author" : "Luke Phillips",
 
-    "homepage" : "https://github.com/lsphillips/alttpr-for-my-retro-pi",
+    "homepage" : "https://github.com/lsphillips/alttpr-for-my-retro-pie",
 
     "bugs" :
     {
-        "url" : "https://github.com/lsphillips/alttpr-for-my-retro-pi/issues"
+        "url" : "https://github.com/lsphillips/alttpr-for-my-retro-pie/issues"
     },
 
     "repository" :
     {
         "type" : "git",
-        "url" : "https://github.com/lsphillips/alttpr-for-my-retro-pi.git"
+        "url" : "https://github.com/lsphillips/alttpr-for-my-retro-pie.git"
     },
 
     "dependencies" :
@@ -61,7 +61,7 @@
         "develop" : "node build.js developing",
         "start" : "electron .",
         "package" : "electron-packager ./build --arch arm64 --platform linux --out ./packages --overwrite",
-        "installer" : "electron-installer-debian --src ./packages/alttpr-for-my-retro-pi-linux-arm64 --dest ./installers --arch arm64 --compression xz"
+        "installer" : "electron-installer-debian --src ./packages/alttpr-for-my-retro-pie-linux-arm64 --dest ./installers --arch arm64 --compression xz"
     },
 
     "engines" :

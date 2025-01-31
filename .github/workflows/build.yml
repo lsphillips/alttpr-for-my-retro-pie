@@ -73,7 +73,7 @@ jobs:
         run: npm run package
 
       - name: Inspect package
-        working-directory: packages/alttpr-for-my-retro-pi-linux-arm64
+        working-directory: packages/alttpr-for-my-retro-pie-linux-arm64
         run: ls -R
 
       - name: Create Installer
@@ -82,5 +82,5 @@ jobs:
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: alttpr-for-my-retro-pi
+          name: alttpr-for-my-retro-pie
           path: ./installers

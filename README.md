@@ -1,6 +1,6 @@
-# `alttpr-for-my-retro-pi`
+# `alttpr-for-my-retro-pie`
 
-[![Built using GitHub Action](https://github.com/lsphillips/alttpr/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/lsphillips/alttpr-for-my-retro-pi/actions)
+[![Built using GitHub Action](https://github.com/lsphillips/alttpr/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/lsphillips/alttpr-for-my-retro-pie/actions)
 
 An [Electron](https://www.electronjs.org/) powered client for [ALTTPR](https://alttpr.com/) that is designed to work with [RetroPie](https://retropie.org.uk/) making randomizing ROMS for configured presets a couple of controller button presses.
 
@@ -16,9 +16,9 @@ Next place the resulting `config.json` file in the user data location for this a
 
 | System  | Location                                                   |
 | ------- | ---------------------------------------------------------- |
-| Windows | `%APPDATA%/alttpr-for-my-retro-pi/config.json`             |
-| Linux   | `~/.config/alttpr-for-my-retro-pi/config.json`             |
-| Mac     | `~/Library/Application/alttpr-for-my-retro-pi/config.json` |
+| Windows | `%APPDATA%/alttpr-for-my-retro-pie/config.json`             |
+| Linux   | `~/.config/alttpr-for-my-retro-pie/config.json`             |
+| Mac     | `~/Library/Application/alttpr-for-my-retro-pie/config.json` |
 
 Next, to start a process that will watch for renderer process code changes, run this command:
 

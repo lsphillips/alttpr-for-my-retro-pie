@@ -1,0 +1,43 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - v*
+
+jobs:
+
+  release:
+
+    name: Release
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Node
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Package Dependencies
+        working-directory: build
+        run: npm i --no-package-lock
+
+      - name: Package Build
+        run: npm run package
+
+      - name: Create Installer
+        run: npm run installer
+
+      - name: Create Release
+        run: gh release create --title ${{ github.ref_name }} --verify-tag ./installers/*.deb

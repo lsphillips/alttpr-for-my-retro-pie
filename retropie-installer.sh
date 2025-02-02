@@ -6,12 +6,13 @@ rp_module_licence="MIT https://github.com/lsphillips/alttpr-for-my-retro-pie/blo
 rp_module_section="exp"
 
 function depends_alttpr-for-my-retro-pie() {
-	getDepends xorg matchbox
+	getDepends jq xorg matchbox
 }
 
 function install_bin_alttpr-for-my-retro-pie() {
-    # eval wget $(curl -s https://api.github.com/repos/lsphillips/alttpr-for-my-retro-pie/releases/latest | grep debian_installer | cut -d : -f 2,3)
-	aptInstall ./RetroPie-Setup/scriptmodules/ports/alttpr.deb
+	wget $(curl -s https://api.github.com/repos/lsphillips/alttpr-for-my-retro-pie/releases/latest | jq -r ".assets[] | select(.name | test(\"arm64.deb\")) | .browser_download_url") --output-document "$md_id.deb"
+	aptInstall "$md_id.deb"
+	rm "$md_id.deb"
 }
 
 function configure_alttpr-for-my-retro-pie() {

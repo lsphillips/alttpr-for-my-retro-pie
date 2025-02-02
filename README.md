@@ -4,9 +4,23 @@
 
 An [Electron](https://www.electronjs.org/) powered client for [ALTTPR](https://alttpr.com/) that is designed to work with [RetroPie](https://retropie.org.uk/) making randomizing ROMS for configured presets a couple of controller button presses.
 
-## Installation
+## Raspberry Pi Installation
 
-Working on it.
+> [!WARNING]
+> Due to Electron requiring a higher version of `glibc` than what the supported RetroPie image provides. This tools only works if you [manually install](https://retropie.org.uk/docs/Manual-Installation/) RetroPie on a later version Raspberry Pi OS based on Debian Bullseye or later.
+
+First, login in to your Raspberry Pi and download the installer by running this command:
+
+``` bash
+wget "https://raw.githubusercontent.com/lsphillips/alttpr-for-my-retro-pie/refs/heads/main/retropie-installer.sh" \
+  --output-document ~/RetroPie-Setup/scriptmodules/ports/alttpr-for-my-retro-pie.sh \
+/
+```
+
+> [!TIP]
+> This assumes that your `RetroPie-Setup` installation is in the user's home directory. If it isn't, then adjust accordingly.
+
+Then install `alttpr-for-my-retro-pie` by using RetroPie Setup, this will be available to install under experimental ports.
 
 ## Development
 
@@ -74,5 +88,6 @@ Finally, to create a `.deb` installer in the `installers` directory, run this co
 npm run installer
 ```
 
-**Please Note:** Creating an installer should be performed in a Linux environment. Please see the [requirements](https://github.com/electron-userland/electron-installer-debian#requirements) for the `electron-installer-debian` tool.
+> [!IMPORTANT]
+> Creating an installer should be performed in a Linux environment. Please see the [requirements](https://github.com/electron-userland/electron-installer-debian#requirements) for the `electron-installer-debian` tool.
 

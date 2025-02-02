@@ -1,13 +1,13 @@
 # `alttpr-for-my-retro-pie`
 
-[![Built using GitHub Action](https://github.com/lsphillips/alttpr/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/lsphillips/alttpr-for-my-retro-pie/actions)
+[![Main Build](https://github.com/lsphillips/alttpr-for-my-retro-pie/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/lsphillips/alttpr-for-my-retro-pie/actions)
 
 An [Electron](https://www.electronjs.org/) powered client for [ALTTPR](https://alttpr.com/) that is designed to work with [RetroPie](https://retropie.org.uk/) making randomizing ROMS for configured presets a couple of controller button presses.
 
 ## Raspberry Pi Installation
 
 > [!WARNING]
-> Due to Electron requiring a higher version of `glibc` than what the supported RetroPie image provides. This tools only works if you [manually install](https://retropie.org.uk/docs/Manual-Installation/) RetroPie on a later version Raspberry Pi OS based on Debian Bullseye or later.
+> Electron requires a higher version of `glibc` than what the supported RetroPie image provide; therefore this will only work if you [manually install](https://retropie.org.uk/docs/Manual-Installation/) RetroPie on a version of Raspberry Pi OS based on Debian Bullseye or later.
 
 First, login in to your Raspberry Pi and download the installer by running this command:
 

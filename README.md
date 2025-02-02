@@ -20,7 +20,48 @@ wget "https://raw.githubusercontent.com/lsphillips/alttpr-for-my-retro-pie/refs/
 > [!TIP]
 > This assumes that your `RetroPie-Setup` installation is in the user's home directory. If it isn't, then adjust accordingly.
 
-Then install `alttpr-for-my-retro-pie` by using RetroPie Setup, this will be available to install under experimental ports.
+Then install this application by using RetroPie Setup, this will be available to install under experimental ports.
+
+## Configuration
+
+This application is powered by a JSON configuration file that is expected to be at `~/.config/alttpr-for-my-retro-pie/config.json` and should have the following properties:
+
+| Property              | Required | Type                                                  | Default    | Description                                                                                                                                                 |
+| --------------------- | :------: | :---------------------------------------------------: | :--------: | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `baseRomPath`         | Yes      | `string`                                              |            | The path to the `Zelda no Densetsu: Kamigami no Triforce v1.0` ROM file; normally this would be located in your Retro Pie SNES ROM directory.               |
+| `targetDirectoryPath` | Yes      | `string`                                              |            | The path to the directory where the application will place the randomized ROM files; normally this would by your Retro Pie SNES ROM directory.              |
+| `seedPresets`         | Yes      | `array` or `string`                                   |            | Either an array of [presets](#presets) or a URL to a JSON file that is an array or presets.                                                                 |
+| `heartSpeed`          | No       | `Off`, `Quater`, `Half`, `Normal`, `Double`           | `Normal`   | Change the speed of the beep when Link is low on health.                                                                                                    |
+| `menuSpeed`           | No       | `Instant`, `Slow`, `Normal`, `Fast`                   | `Normal`   | Change the speed of opening and closing the item menu.                                                                                                      |
+| `heartColor`          | No       | `Red`, `Green`, `Blue`, `Yellow`                      | `Red`      | Change the color of your hearts.                                                                                                                            |
+| `backgroundMusic`     | No       | `boolean`                                             | `true`     | Enable or disable the background music, including MSU-1 playback. MSU-1 users should leave this enabled.                                                    |
+| `msu1Resume`          | No       | `boolean`                                             | `true`     | Enables the MSU-1 music resume feature. This feature allows the track that was playing to resume where it left off when re-entering the overworld.          |
+| `itemQuickSwap`       | No       | `boolean`                                             | `false`    | Allow items to be changed with the L and R buttons without opening the menu.                                                                                |
+| `reduceFlashing`      | No       | `boolean`                                             | `false`    | Severely reduces the intensity of in-game flashing effects, or outright disables them. Please use caution, your photosensitivity to effects may still vary. |
+
+### Presets
+
+A preset is a collection of settings that define how the game should be randomized. A preset object consists of the following properties:
+
+| Property               | Required | Type                                                                                                        | Default       | Description                                                                            |
+| ---------------------- | :------: | :---------------------------------------------------------------------------------------------------------: | :-----------: | -------------------------------------------------------------------------------------- |
+| `name`                 | Yes      | `string`                                                                                                    |               | The name of the preset. This will be used in the file name of the randomized ROM file. |
+| `goal`                 | No       | `Standard`, `FastGanon`, `Dungeons`, `Pedestal`, `TriforceHunt`, `GanonHunt`, `Completionist`               | `Standard`    | [Refer to the documentation](https://alttpr.com/en/options#goal)                       |
+| `world`                | No       | `Standard`, `Open`, `Inverted` `Retro`                                                                      | `Standard`    | [Refer to the documentation](https://alttpr.com/en/options#world_state)                |
+| `crystalsForGanon`     | No       | `0` - `7`                                                                                                   | `7`           | [Refer to the documentation](https://alttpr.com/en/options#ganon_open)                 |
+| `crystalsForTower`     | No       | `0` - `7`                                                                                                   | `7`           | [Refer to the documentation](https://alttpr.com/en/options#tower_open)                 |
+| `itemAccessibility`    | No       | `Inventory`, `Locations`,`Beatable`                                                                         | `Inventory`   | [Refer to the documentation](https://alttpr.com/en/options#accessibility)              |
+| `itemPlacement`        | No       | `Basic`, `Advanced`                                                                                         | `Basic`       | [Refer to the documentation](https://alttpr.com/en/options#item_placement)             |
+| `itemFunctionality`    | No       | `Standard`, `Hard`, `Expert`                                                                                | `Standard`    | [Refer to the documentation](https://alttpr.com/en/options#item_functionality)         |
+| `itemPool`             | No       | `Standard`, `Hard`, `Expert`                                                                                | `Standard`    | [Refer to the documentation](https://alttpr.com/en/options#item_pool)                  |
+| `swords`               | No       | `Standard`, `Assured`, `None`, `Random`                                                                     | `Standard`    | [Refer to the documentation](https://alttpr.com/en/options#weapons)                    |
+| `dungeonItemShuffling` | No       | `Standard`, `MapsCompasses`, `MapsCompassesSmallKeys`, `Keysanity`                                          | `Standard`    | [Refer to the documentation](https://alttpr.com/en/options#accessibility)              |
+| `bossShuffling`        | No       | `Standard`, `Simple`, `Full`,  `Random`                                                                     | `Standard`    | [Refer to the documentation](https://alttpr.com/en/options#bosses)                     |
+| `entranceShuffling`    | No       | `Standard`, `Simple`, `Restricted`, `Full`, `Crossed`, `Insanity`                                           | `Standard`    | [Refer to the documentation](https://alttpr.com/en/options#entrance_shuffle)           |
+| `enemyShuffling`       | No       | `Standard`, `Shuffled`, `Random`                                                                            | `Standard`    | [Refer to the documentation](https://alttpr.com/en/options#enemy_shuffle)              |
+| `enemyDamage`          | No       | `Standard`, `Shuffled`, `Random`                                                                            | `Standard`    | [Refer to the documentation](https://alttpr.com/en/options#enemy_damage)               |
+| `enemyHealth`          | No       | `Standard`, `Easy`, `Hard`, `Expert`                                                                        | `Standard`    | [Refer to the documentation](https://alttpr.com/en/options#enemy_health)               |
+| `hints`                | No       | `boolean`                                                                                                   | `true`        | [Refer to the documentation](https://alttpr.com/en/options#hints)                      |
 
 ## Development
 

@@ -100,8 +100,6 @@ export async function getConfig (path)
 		return fail(`The target directory '${targetDirectory}' does not exist.`);
 	}
 
-	console.log(baseRom, targetDirectory);
-
 	return ok({
 		baseRom,
 		targetDirectory,

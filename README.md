@@ -14,8 +14,8 @@ First copy the contents of the `config.sample.json` file into a `config.json` fi
 
 Next place the resulting `config.json` file in the user data location for this application:
 
-| System  | Location                                                   |
-| ------- | ---------------------------------------------------------- |
+| System  | Location                                                    |
+| ------- | ----------------------------------------------------------- |
 | Windows | `%APPDATA%/alttpr-for-my-retro-pie/config.json`             |
 | Linux   | `~/.config/alttpr-for-my-retro-pie/config.json`             |
 | Mac     | `~/Library/Application/alttpr-for-my-retro-pie/config.json` |

@@ -1,40 +1,41 @@
 .settings
 {
 	box-sizing: border-box;
-	display: flex;
-	flex-flow: row nowrap;
-	column-gap: 15px;
-	align-items: center;
 	padding: 10px;
-	font-size: 12px;
+	font-size: 14px;
 	background: #ccc;
 	border-top: 1px solid #999;
 }
 
 .settings__player
 {
+	--size: 2;
+
 	position: relative;
-	width: 32px;
-	height: 32px;
-	margin: 0 -5px 0 0;
+	width: 64px;
+	height: 64px;
+	margin: -42px auto 0;
 }
 
 .settings__heart-color
 {
-	--size: 0.5;
+	--size: 1;
 
 	position: absolute;
 	bottom: 0;
-	left: 4px;
-	width: 24px;
-	height: 8px;
+	left: 8px;
+	width: 48px;
+	height: 16px;
 }
 
 .settings__gameplay
 {
-	display: contents;
+	display: flex;
+	flex-flow: row wrap;
+	column-gap: 15px;
+	justify-content: center;
 	padding: 0;
-	margin: 0;
+	margin: 8px 0 0;
 }
 
 .settings__gameplay-setting

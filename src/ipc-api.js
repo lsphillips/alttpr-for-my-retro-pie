@@ -82,10 +82,6 @@ export function setupIpcApi ({
 		error = false
 	} = {}) =>
 	{
-		// This may seem backwards but this is what custom
-		// scripts in RetroPie expect.
-		//
-		// Documentation: https://retropie.org.uk/docs/Runcommand/#runcommand-menu-custom-scripts
-		app.exit(error ? 0 : 2);
+		app.exit(error ? 1 : 0);
 	});
 }

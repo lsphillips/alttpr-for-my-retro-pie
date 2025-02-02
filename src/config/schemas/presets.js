@@ -2,7 +2,6 @@ import Ajv from 'ajv';
 import {
 	Goal,
 	World,
-	Glitches,
 	ItemPlacement,
 	ItemPooling,
 	ItemFunctioality,
@@ -38,10 +37,6 @@ export const presetSchema =
 			world : {
 				type : 'string',
 				enum : Object.keys(World)
-			},
-			glitches : {
-				type : 'string',
-				enum : Object.keys(Glitches)
 			},
 			crystalsForGanon : {
 				type : 'number'

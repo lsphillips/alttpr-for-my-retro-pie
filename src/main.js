@@ -20,8 +20,6 @@ function getPathToFile (file)
 function setupWindow ()
 {
 	const window = new BrowserWindow({
-		width             : 1280,
-		height            : 720,
 		center            : true,
 		resizable         : false,
 		movable           : false,
@@ -30,13 +28,14 @@ function setupWindow ()
 		alwaysOnTop       : false,
 		menuBarVisibility : false,
 		titleBarStyle     : 'hidden',
-		title             : 'The Legend of Zelda - A Link to the Past Randomizer',
+		title             : 'ALTTPR For My Retro Pie',
 		webPreferences    : {
 			preload : getPathToFile('preload.cjs')
 		}
 	});
 
 	window.focus();
+	window.maximize();
 	window.loadFile(
 		getPathToFile('views/index.html')
 	);
@@ -89,5 +88,5 @@ app.on('will-quit', () =>
 
 app.on('window-all-closed', () =>
 {
-	app.quit(2);
+	app.quit(0);
 });

@@ -4,7 +4,6 @@ import {
 import {
 	Goal,
 	World,
-	Glitches,
 	ItemPlacement,
 	ItemAccessibility,
 	SwordMode,
@@ -29,11 +28,6 @@ const Settings = {
 	[World.Open]                                : 'Open',
 	[World.Inverted]                            : 'Inverted',
 	[World.Retro]                               : 'Retro',
-	[Glitches.Overworld]                        : 'Overworld',
-	[Glitches.Hybrid]                           : 'Hybrid Major',
-	[Glitches.Major]                            : 'Major',
-	[Glitches.Logicless]                        : 'No Logic',
-	[Glitches.None]                             : 'None',
 	[ItemPlacement.Basic]                       : 'Basic',
 	[ItemPlacement.Advanced]                    : 'Advanced',
 	[ItemAccessibility.Inventory]               : '100% Inventory',
@@ -89,7 +83,6 @@ export default memo(function Preset ({
 	name,
 	goal,
 	world,
-	glitches,
 	crystalsForGanon,
 	crystalsForTower,
 	itemAccessibility,
@@ -124,35 +117,29 @@ export default memo(function Preset ({
 						{ name }
 					</h2>
 					<dl className="preset__gameplay-settings">
-						<div className="preset__gameplay__setting">
+						<div className="preset__gameplay-setting">
 							<dt className="preset__gameplay-setting-name">
 								World
 							</dt>
 							<dd className="preset__gameplay-setting-value"> { Settings[world] } </dd>
 						</div>
-						<div className="preset__gameplay__setting">
+						<div className="preset__gameplay-setting">
 							<dt className="preset__gameplay-setting-name">
 								Accessibility
 							</dt>
 							<dd className="preset__gameplay-setting-value"> { Settings[itemAccessibility] } </dd>
 						</div>
-						<div className="preset__gameplay__setting">
+						<div className="preset__gameplay-setting">
 							<dt className="preset__gameplay-setting-name">
 								Placement
 							</dt>
 							<dd className="preset__gameplay-setting-value"> { Settings[itemPlacement] } </dd>
 						</div>
-						<div className="preset__gameplay__setting">
+						<div className="preset__gameplay-setting">
 							<dt className="preset__gameplay-setting-name">
 								Swords
 							</dt>
 							<dd className="preset__gameplay-setting-value"> { Settings[swords] } </dd>
-						</div>
-						<div className="preset__gameplay__setting">
-							<dt className="preset__gameplay-setting-name">
-								Glitches
-							</dt>
-							<dd className="preset__gameplay-setting-value"> { Settings[glitches] } </dd>
 						</div>
 					</dl>
 				</div>

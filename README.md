@@ -136,3 +136,7 @@ npm run installer
 
 > [!IMPORTANT]
 > Creating an installer should be performed in a Linux environment. Please see the [requirements](https://github.com/electron-userland/electron-installer-debian#requirements) for the `electron-installer-debian` tool.
+
+## License
+
+This project is released under the [MIT license](LICENSE.txt).

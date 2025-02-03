@@ -7,7 +7,7 @@ An [Electron](https://www.electronjs.org/) powered client for [ALTTPR](https://a
 ## Raspberry Pi Installation
 
 > [!WARNING]
-> Electron requires a higher version of `glibc` than what the supported RetroPie image provide; therefore this will only work if you [manually install](https://retropie.org.uk/docs/Manual-Installation/) RetroPie on a version of Raspberry Pi OS based on Debian Bullseye or later.
+> Electron requires a higher version of `glibc` than what the latest supported RetroPie image uses; therefore this will only work if you [manually install](https://retropie.org.uk/docs/Manual-Installation/) RetroPie on a version of Raspberry Pi OS based on Debian Bullseye or later. This is not officially supported so your mileage may vary.
 
 First, login in to your Raspberry Pi and download the installer by running this command:
 
@@ -18,17 +18,22 @@ wget "https://raw.githubusercontent.com/lsphillips/alttpr-for-my-retro-pie/refs/
 ```
 
 > [!TIP]
-> This assumes that your `RetroPie-Setup` installation is in the user's home directory. If it isn't, then adjust accordingly.
+> The above command assumes that your `RetroPie-Setup` installation is in the user's home directory; if that isn't the case then please adjust accordingly.
 
-Then install this application by using RetroPie Setup, this will be available to install under experimental ports.
+Next, create a [configuration file](#configuration) and place it at this location: `~/.config/alttpr-for-my-retro-pie/config.json`.
+
+Finally, you can run the installer by managing packages using `RetroPie-Setup` (it will be listed under experimental ports). Once installed, restart EmulationStation and you will then see `ALTTPR For My Retro Pie` under `Ports`.
+
+> [!TIP]
+> When you generate a randomized game ROM using a new preset (where its name is used in the ROM filename) it won't appear in your game list until you restart EmulationStart.
 
 ## Configuration
 
-This application is powered by a JSON configuration file that is expected to be at `~/.config/alttpr-for-my-retro-pie/config.json` and should have the following properties:
+The `alttpr-for-my-retro-pie` application is powered by a JSON configuration file enabling you to configure the following properties:
 
 | Property              | Required | Type                                                  | Default    | Description                                                                                                                                                 |
 | --------------------- | :------: | :---------------------------------------------------: | :--------: | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `baseRomPath`         | Yes      | `string`                                              |            | The path to the `Zelda no Densetsu: Kamigami no Triforce v1.0` ROM file; normally this would be located in your Retro Pie SNES ROM directory.               |
+| `baseRomPath`         | Yes      | `string`                                              |            | The path to a `Zelda no Densetsu: Kamigami no Triforce v1.0` ROM file; normally this would be located in your Retro Pie SNES ROM directory.                 |
 | `targetDirectoryPath` | Yes      | `string`                                              |            | The path to the directory where the application will place the randomized ROM files; normally this would by your Retro Pie SNES ROM directory.              |
 | `seedPresets`         | Yes      | `array` or `string`                                   |            | Either an array of [presets](#presets) or a URL to a JSON file that is an array or presets.                                                                 |
 | `heartSpeed`          | No       | `Off`, `Quater`, `Half`, `Normal`, `Double`           | `Normal`   | Change the speed of the beep when Link is low on health.                                                                                                    |
@@ -41,7 +46,7 @@ This application is powered by a JSON configuration file that is expected to be 
 
 ### Presets
 
-A preset is a collection of settings that define how the game should be randomized. A preset object consists of the following properties:
+A preset is a collection of settings that define how the game should be randomized. A preset object can consist of the following properties:
 
 | Property               | Required | Type                                                                                                        | Default       | Description                                                                            |
 | ---------------------- | :------: | :---------------------------------------------------------------------------------------------------------: | :-----------: | -------------------------------------------------------------------------------------- |
@@ -131,4 +136,3 @@ npm run installer
 
 > [!IMPORTANT]
 > Creating an installer should be performed in a Linux environment. Please see the [requirements](https://github.com/electron-userland/electron-installer-debian#requirements) for the `electron-installer-debian` tool.
-

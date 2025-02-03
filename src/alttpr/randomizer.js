@@ -56,12 +56,12 @@ export default async function randomize (rom, options = {})
 		spoilers             : true,
 		language             : Language.English,
 		heartSpeed           : HeartSpeed.Normal,
-		menuSpeed			 : MenuSpeed.Normal,
-		heartColor			 : HeartColor.Red,
-		backgroundMusic		 : true,
-		msu1Resume			 : true,
-		itemQuickSwap		 : false,
-		reduceFlashing		 : false,
+		menuSpeed            : MenuSpeed.Normal,
+		heartColor           : HeartColor.Red,
+		backgroundMusic      : true,
+		msu1Resume           : true,
+		itemQuickSwap        : false,
+		reduceFlashing       : false,
 		...options
 	};
 

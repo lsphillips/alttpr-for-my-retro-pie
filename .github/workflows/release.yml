@@ -34,7 +34,7 @@ jobs:
 
       - name: Set Version
         working-directory: build
-        run: npm version $(echo "${{ github.ref_name }}" } | cut -c 1-)
+        run: npm version $(echo "${{ github.ref_name }}" | cut -c 1-) --no-git-tag-version
 
       - name: Package Dependencies
         working-directory: build

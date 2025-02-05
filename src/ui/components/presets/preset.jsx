@@ -9,7 +9,7 @@ import {
 	SwordMode,
 	DungeonItemShuffle,
 	ItemPooling,
-	ItemFunctioality,
+	ItemFunctionality,
 	EnemyHealth,
 	EnemyDamage
 } from '../../../alttpr/settings.js';
@@ -53,9 +53,9 @@ const Settings = {
 	[ItemPooling.Standard]                      : 'standard-pool',
 	[ItemPooling.Hard]                          : 'hard-pool',
 	[ItemPooling.Expert]                        : 'expert-pool',
-	[ItemFunctioality.Standard]                 : 'standard-functionality',
-	[ItemFunctioality.Hard]                     : 'hard-functionality',
-	[ItemFunctioality.Expert]                   : 'expert-functionality',
+	[ItemFunctionality.Normal]                  : 'normal-functionality',
+	[ItemFunctionality.Hard]                    : 'hard-functionality',
+	[ItemFunctionality.Expert]                  : 'expert-functionality',
 	[EnemyHealth.Standard]                      : 'standard-health',
 	[EnemyHealth.Easy]                          : 'easy-health',
 	[EnemyHealth.Hard]                          : 'hard-health',

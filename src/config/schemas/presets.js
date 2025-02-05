@@ -4,7 +4,7 @@ import {
 	World,
 	ItemPlacement,
 	ItemPooling,
-	ItemFunctioality,
+	ItemFunctionality,
 	ItemAccessibility,
 	DungeonItemShuffle,
 	EntranceShuffle,
@@ -54,7 +54,7 @@ export const presetSchema =
 			},
 			itemFunctionality : {
 				type : 'string',
-				enum : Object.keys(ItemFunctioality)
+				enum : Object.keys(ItemFunctionality)
 			},
 			itemPool : {
 				type : 'string',

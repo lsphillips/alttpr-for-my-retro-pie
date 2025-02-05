@@ -34,10 +34,10 @@ export const ItemPooling = Object.freeze({
 	Expert   : 'itemPooling.expert'
 });
 
-export const ItemFunctioality = Object.freeze({
-	Standard : 'itemFunctionality.standard',
-	Hard     : 'itemFunctionality.hard',
-	Expert   : 'itemFunctionality.expert'
+export const ItemFunctionality = Object.freeze({
+	Normal : 'itemFunctionality.normal',
+	Hard   : 'itemFunctionality.hard',
+	Expert : 'itemFunctionality.expert'
 });
 
 export const ItemAccessibility = Object.freeze({

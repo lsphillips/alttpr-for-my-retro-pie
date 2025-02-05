@@ -65,7 +65,7 @@ const SeedSettingValues =
 	[EntranceShuffle.Full]                      : 'full',
 	[EntranceShuffle.Crossed]                   : 'crossed',
 	[EntranceShuffle.Insanity]                  : 'insanity',
-	[BossShuffle.Standard]                      : 'none',
+	[BossShuffle.None]                          : 'none',
 	[BossShuffle.Simple]                        : 'simple',
 	[BossShuffle.Full]                          : 'full',
 	[BossShuffle.Random]                        : 'random',

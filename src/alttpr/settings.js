@@ -63,10 +63,10 @@ export const EntranceShuffle = Object.freeze({
 });
 
 export const BossShuffle = Object.freeze({
-	Standard : 'bossShuffle.standard',
-	Simple   : 'bossShuffle.simple',
-	Full     : 'bossShuffle.full',
-	Random   : 'bossShuffle.random'
+	None   : 'bossShuffle.none',
+	Simple : 'bossShuffle.simple',
+	Full   : 'bossShuffle.full',
+	Random : 'bossShuffle.random'
 });
 
 export const EnemyShuffle = Object.freeze({

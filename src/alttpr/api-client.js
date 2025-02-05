@@ -28,7 +28,7 @@ import {
 
 const SeedSettingValues =
 {
-	[Goal.Standard]                             : 'ganon',
+	[Goal.DefeatGanon]                          : 'ganon',
 	[Goal.FastGanon]                            : 'fast_ganon',
 	[Goal.Dungeions]                            : 'dungeons',
 	[Goal.Pedestal]                             : 'pedestal',

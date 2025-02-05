@@ -1,5 +1,5 @@
 export const Goal = Object.freeze({
-	Standard      : 'goal.standard',
+	DefeatGanon   : 'goal.defeatGanon',
 	FastGanon     : 'goal.fastGanon',
 	Dungeons      : 'goal.dungeons',
 	Pedestal      : 'goal.pedestal',

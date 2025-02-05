@@ -39,7 +39,7 @@ const Settings = {
 	[SwordMode.Assured]                         : 'Assured',
 
 	// Sprites.
-	[Goal.Standard]                             : 'defeat-ganon',
+	[Goal.DefeatGanon]                          : 'defeat-ganon',
 	[Goal.FastGanon]                            : 'fast-ganon',
 	[Goal.Dungeons]                             : 'all-dungeons',
 	[Goal.Pedestal]                             : 'master-sword-pedestal',

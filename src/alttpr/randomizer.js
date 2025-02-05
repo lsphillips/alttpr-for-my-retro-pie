@@ -36,7 +36,7 @@ import {
 export default async function randomize (rom, options = {})
 {
 	const settings = {
-		goal                 : Goal.Standard,
+		goal                 : Goal.DefeatGanon,
 		world                : World.Standard,
 		glitches             : Glitches.None,
 		crystalsForGanon     : 7,

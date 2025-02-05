@@ -76,7 +76,7 @@ export function parsePreset ({
 		crystalsForTower,
 		hints,
 		spoilers,
-		goal : lookup(Goal, goal, Goal.Standard),
+		goal : lookup(Goal, goal, Goal.DefeatGanon),
 		world : lookup(World, world, World.Standard),
 		glitches : lookup(Glitches, glitches, Glitches.None),
 		itemAccessibility : lookup(ItemAccessibility, itemAccessibility, ItemAccessibility.Inventory),

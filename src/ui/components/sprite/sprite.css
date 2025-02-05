@@ -13,7 +13,7 @@
 	background-size: calc(382px * var(--size)) calc(354px * var(--size));
 }
 
-.sprite--goal-ganon                                                     { --x: 0px;    --y: 0px    }
+.sprite--goal-defeat-ganon                                              { --x: 0px;    --y: 0px    }
 .sprite--goal-fast-ganon                                                { --x: -50px;  --y: 0px    }
 .sprite--goal-all-dungeons                                              { --x: -100px; --y: 0px    }
 .sprite--goal-master-sword-pedestal                                     { --x: -150px; --y: 0px    }

@@ -33,8 +33,8 @@ const Settings = {
 	[ItemAccessibility.Inventory]               : '100% Inventory',
 	[ItemAccessibility.Locations]               : '100% Items',
 	[ItemAccessibility.None]                    : 'Required Only',
-	[SwordMode.Standard]                        : 'Standard',
-	[SwordMode.None]                            : 'Swordless',
+	[SwordMode.Vanilla]                         : 'Vanilla',
+	[SwordMode.Swordless]                       : 'Swordless',
 	[SwordMode.Random]                          : 'Randomized',
 	[SwordMode.Assured]                         : 'Assured',
 
@@ -69,7 +69,7 @@ const Settings = {
 
 function getItemDifficulty (itemPool, itemFunctionality, swords)
 {
-	return 'item-difficulty-' + Settings[itemPool] + '-' + Settings[itemFunctionality] + (swords === SwordMode.None ? '-swordless' : '');
+	return 'item-difficulty-' + Settings[itemPool] + '-' + Settings[itemFunctionality] + (swords === SwordMode.Swordless ? '-swordless' : '');
 }
 
 function getEnemyDifficulty (enemyHealth, enemyDamage)

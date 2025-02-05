@@ -89,10 +89,10 @@ export const EnemyHealth = Object.freeze({
 });
 
 export const SwordMode = Object.freeze({
-	Standard : 'swordMode.standard',
-	Assured  : 'swordMode.assured',
-	None     : 'swordMode.none',
-	Random   : 'swordMode.random'
+	Vanilla   : 'swordMode.vanilla',
+	Assured   : 'swordMode.assured',
+	Swordless : 'swordMode.swordless',
+	Random    : 'swordMode.random'
 });
 
 export const Language = Object.freeze({

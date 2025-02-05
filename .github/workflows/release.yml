@@ -32,6 +32,10 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Set Version
+        working-directory: build
+        run: npm version $(echo "${{ github.ref_name }}" } | cut -c 1-)
+
       - name: Package Dependencies
         working-directory: build
         run: npm i --no-package-lock

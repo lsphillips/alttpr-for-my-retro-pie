@@ -50,7 +50,7 @@ const Settings = {
 	[DungeonItemShuffle.MapsCompasses]          : 'maps-compasses',
 	[DungeonItemShuffle.MapsCompassesSmallKeys] : 'maps-compasses-small-keys',
 	[DungeonItemShuffle.Keysanity]              : 'keysanity',
-	[ItemPooling.Standard]                      : 'standard-pool',
+	[ItemPooling.Normal]                        : 'normal-pool',
 	[ItemPooling.Hard]                          : 'hard-pool',
 	[ItemPooling.Expert]                        : 'expert-pool',
 	[ItemFunctionality.Normal]                  : 'normal-functionality',

@@ -29,9 +29,9 @@ export const ItemPlacement = Object.freeze({
 });
 
 export const ItemPooling = Object.freeze({
-	Standard : 'itemPooling.standard',
-	Hard     : 'itemPooling.hard',
-	Expert   : 'itemPooling.expert'
+	Normal : 'itemPooling.normal',
+	Hard   : 'itemPooling.hard',
+	Expert : 'itemPooling.expert'
 });
 
 export const ItemFunctionality = Object.freeze({

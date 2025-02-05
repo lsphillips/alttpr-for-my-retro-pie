@@ -46,7 +46,7 @@ const SeedSettingValues =
 	[Glitches.None]                             : 'none',
 	[ItemPlacement.Basic]                       : 'basic',
 	[ItemPlacement.Advanced]                    : 'advanced',
-	[ItemPooling.Standard]                      : 'normal',
+	[ItemPooling.Normal]                        : 'normal',
 	[ItemPooling.Hard]                          : 'hard',
 	[ItemPooling.Expert]                        : 'expert',
 	[ItemFunctionality.Normal]                  : 'normal',

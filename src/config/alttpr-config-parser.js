@@ -82,7 +82,7 @@ export function parsePreset ({
 		itemAccessibility : lookup(ItemAccessibility, itemAccessibility, ItemAccessibility.Inventory),
 		itemPlacement : lookup(ItemPlacement, itemPlacement, ItemPlacement.Basic),
 		itemFunctionality : lookup(ItemFunctionality, itemFunctionality, ItemFunctionality.Normal),
-		itemPool : lookup(ItemPooling, itemPool, ItemPooling.Standard),
+		itemPool : lookup(ItemPooling, itemPool, ItemPooling.Normal),
 		swords : lookup(SwordMode, swords, SwordMode.Random),
 		dungeonItemShuffling : lookup(DungeonItemShuffle, dungeonItemShuffling, DungeonItemShuffle.Standard),
 		bossShuffling : lookup(BossShuffle, bossShuffling, BossShuffle.Standard),

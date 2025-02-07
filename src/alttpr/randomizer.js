@@ -49,7 +49,7 @@ export default async function randomize (rom, options = {})
 		dungeonItemShuffling : DungeonItemShuffle.Standard,
 		bossShuffling        : BossShuffle.None,
 		entranceShuffling    : EntranceShuffle.None,
-		enemyShuffling       : EnemyShuffle.Standard,
+		enemyShuffling       : EnemyShuffle.None,
 		enemyDamage          : EnemyDamage.Standard,
 		enemyHealth          : EnemyHealth.Standard,
 		hints                : true,

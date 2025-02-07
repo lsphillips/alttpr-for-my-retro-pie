@@ -69,7 +69,7 @@ const SeedSettingValues =
 	[BossShuffle.Simple]                        : 'simple',
 	[BossShuffle.Full]                          : 'full',
 	[BossShuffle.Random]                        : 'random',
-	[EnemyShuffle.Standard]                     : 'none',
+	[EnemyShuffle.None]                         : 'none',
 	[EnemyShuffle.Shuffled]                     : 'shuffled',
 	[EnemyShuffle.Random]                       : 'random',
 	[EnemyDamage.Standard]                      : 'default',

@@ -70,7 +70,7 @@ export const BossShuffle = Object.freeze({
 });
 
 export const EnemyShuffle = Object.freeze({
-	Standard : 'enemyShuffle.standard',
+	None     : 'enemyShuffle.none',
 	Shuffled : 'enemyShuffle.shuffled',
 	Random   : 'enemyShuffle.random'
 });

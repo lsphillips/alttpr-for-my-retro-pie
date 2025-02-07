@@ -48,7 +48,7 @@ export default async function randomize (rom, options = {})
 		swords               : SwordMode.Random,
 		dungeonItemShuffling : DungeonItemShuffle.Standard,
 		bossShuffling        : BossShuffle.None,
-		entranceShuffling    : EntranceShuffle.Standard,
+		entranceShuffling    : EntranceShuffle.None,
 		enemyShuffling       : EnemyShuffle.Standard,
 		enemyDamage          : EnemyDamage.Standard,
 		enemyHealth          : EnemyHealth.Standard,

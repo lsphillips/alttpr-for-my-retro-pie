@@ -54,7 +54,7 @@ export const DungeonItemShuffle = Object.freeze({
 });
 
 export const EntranceShuffle = Object.freeze({
-	Standard   : 'entranceShuffle.standard',
+	None       : 'entranceShuffle.none',
 	Simple     : 'entranceShuffle.simple',
 	Restricted : 'entranceShuffle.restricted',
 	Full       : 'entranceShuffle.full',

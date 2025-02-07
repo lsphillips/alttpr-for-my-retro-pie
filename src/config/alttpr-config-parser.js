@@ -86,7 +86,7 @@ export function parsePreset ({
 		swords : lookup(SwordMode, swords, SwordMode.Random),
 		dungeonItemShuffling : lookup(DungeonItemShuffle, dungeonItemShuffling, DungeonItemShuffle.Standard),
 		bossShuffling : lookup(BossShuffle, bossShuffling, BossShuffle.None),
-		entranceShuffling : lookup(EntranceShuffle, entranceShuffling, EntranceShuffle.Standard),
+		entranceShuffling : lookup(EntranceShuffle, entranceShuffling, EntranceShuffle.None),
 		enemyShuffling : lookup(EnemyShuffle, enemyShuffling, EnemyShuffle.Standard),
 		enemyDamage : lookup(EnemyDamage, enemyDamage, EnemyDamage.Standard),
 		enemyHealth : lookup(EnemyHealth, enemyHealth, EnemyHealth.Standard)

@@ -59,7 +59,7 @@ const SeedSettingValues =
 	[DungeonItemShuffle.MapsCompasses]          : 'mc',
 	[DungeonItemShuffle.MapsCompassesSmallKeys] : 'mcs',
 	[DungeonItemShuffle.Keysanity]              : 'full',
-	[EntranceShuffle.Standard]                  : 'none',
+	[EntranceShuffle.None]                      : 'none',
 	[EntranceShuffle.Simple]                    : 'simple',
 	[EntranceShuffle.Restricted]                : 'restricted',
 	[EntranceShuffle.Full]                      : 'full',

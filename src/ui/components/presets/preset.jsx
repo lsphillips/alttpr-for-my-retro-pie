@@ -56,11 +56,11 @@ const Settings = {
 	[ItemFunctionality.Normal]                  : 'normal-functionality',
 	[ItemFunctionality.Hard]                    : 'hard-functionality',
 	[ItemFunctionality.Expert]                  : 'expert-functionality',
-	[EnemyHealth.Standard]                      : 'standard-health',
+	[EnemyHealth.Default]                       : 'default-health',
 	[EnemyHealth.Easy]                          : 'easy-health',
 	[EnemyHealth.Hard]                          : 'hard-health',
 	[EnemyHealth.Expert]                        : 'expert-health',
-	[EnemyDamage.Standard]                      : 'standard-damage',
+	[EnemyDamage.Default]                       : 'default-damage',
 	[EnemyDamage.Random]                        : 'random-damage',
 	[EnemyDamage.Shuffled]                      : 'shuffled-damage'
 };

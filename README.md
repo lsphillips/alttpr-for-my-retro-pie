@@ -64,8 +64,8 @@ A preset is a collection of settings that define how the game should be randomiz
 | `bossShuffling`        | No       | `None`, `Simple`, `Full`,  `Random`                                                                         | `None`        | [Refer to the documentation](https://alttpr.com/en/options#bosses)                     |
 | `entranceShuffling`    | No       | `None`, `Simple`, `Restricted`, `Full`, `Crossed`, `Insanity`                                               | `None`        | [Refer to the documentation](https://alttpr.com/en/options#entrance_shuffle)           |
 | `enemyShuffling`       | No       | `None`, `Shuffled`, `Random`                                                                                | `None`        | [Refer to the documentation](https://alttpr.com/en/options#enemy_shuffle)              |
-| `enemyDamage`          | No       | `Standard`, `Shuffled`, `Random`                                                                            | `Standard`    | [Refer to the documentation](https://alttpr.com/en/options#enemy_damage)               |
-| `enemyHealth`          | No       | `Standard`, `Easy`, `Hard`, `Expert`                                                                        | `Standard`    | [Refer to the documentation](https://alttpr.com/en/options#enemy_health)               |
+| `enemyDamage`          | No       | `Default`, `Shuffled`, `Random`                                                                             | `Default`     | [Refer to the documentation](https://alttpr.com/en/options#enemy_damage)               |
+| `enemyHealth`          | No       | `Default`, `Easy`, `Hard`, `Expert`                                                                         | `Default`     | [Refer to the documentation](https://alttpr.com/en/options#enemy_health)               |
 | `hints`                | No       | `boolean`                                                                                                   | `true`        | [Refer to the documentation](https://alttpr.com/en/options#hints)                      |
 
 ## Development

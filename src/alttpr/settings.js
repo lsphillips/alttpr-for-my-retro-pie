@@ -76,13 +76,13 @@ export const EnemyShuffle = Object.freeze({
 });
 
 export const EnemyDamage = Object.freeze({
-	Standard : 'enemyDamage.standard',
+	Default  : 'enemyDamage.default',
 	Shuffled : 'enemyDamage.shuffled',
 	Random   : 'enemyDamage.random'
 });
 
 export const EnemyHealth = Object.freeze({
-	Standard : 'enemyHealth.standard',
+	Default  : 'enemyHealth.default',
 	Easy     : 'enemyHealth.easy',
 	Hard     : 'enemyHealth.hard',
 	Expert   : 'enemyHealth.expert'

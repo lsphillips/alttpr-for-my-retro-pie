@@ -62,7 +62,7 @@ export function setupIpcApi ({
 			game
 		} = result;
 
-		const pathToRom = join(targetDirectory, `ALTTPR - ${preset.name}.sfc`);
+		const pathToRom = join(targetDirectory, `ALTTPR - ${preset.name} - ${hash}.sfc`);
 
 		try
 		{

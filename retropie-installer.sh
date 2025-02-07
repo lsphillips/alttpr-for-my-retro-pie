@@ -24,11 +24,11 @@ function configure_alttpr-for-my-retro-pie() {
 	cat > "$md_inst/$md_id.sh" << _EOF_
 #!/bin/bash
 xset -dpms s off s noblank
-matchbox-window-manager -use_titlebar no &
+matchbox-window-manager -use_titlebar no -use_cursor no &
 /usr/bin/alttpr-for-my-retro-pie
 _EOF_
 	chmod +x "$md_inst/$md_id.sh"
 
-	addPort "$md_id" "alttpr" "ALTTPR For My Retro Pie" "XINIT: $md_inst/$md_id.sh"
+	addPort "$md_id" "$md_id" "ALTTPR For My Retro Pie" "XINIT: $md_inst/$md_id.sh"
 	mv "$md_conf_root/$md_id" "$md_conf_root/ports"
 }

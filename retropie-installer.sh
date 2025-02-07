@@ -30,5 +30,4 @@ _EOF_
 	chmod +x "$md_inst/$md_id.sh"
 
 	addPort "$md_id" "$md_id" "ALTTPR For My Retro Pie" "XINIT: $md_inst/$md_id.sh"
-	mv "$md_conf_root/$md_id" "$md_conf_root/ports"
 }

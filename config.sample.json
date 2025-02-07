@@ -3,7 +3,7 @@
 	"targetDirectoryPath" : ".",
 	"seedPresets" : [
 		{
-			"name" : "Preset #1",
+			"name" : "Advanced Standard",
 			"goal" : "DefeatGanon",
 			"crystalsForGanon" : 7,
 			"crystalsForTower" : 7,

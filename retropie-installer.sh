@@ -12,7 +12,7 @@ function depends_alttpr-for-my-retro-pie() {
 
 function install_bin_alttpr-for-my-retro-pie() {
 	wget $(curl -s https://api.github.com/repos/lsphillips/alttpr-for-my-retro-pie/releases/latest | jq -r ".assets[] | select(.name | test(\"arm64.deb\")) | .browser_download_url") --output-document "$md_id.deb"
-	aptInstall "$md_id.deb"
+	aptInstall "./$md_id.deb"
 	rm "$md_id.deb"
 }
 

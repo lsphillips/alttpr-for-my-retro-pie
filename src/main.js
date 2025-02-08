@@ -17,6 +17,11 @@ function getPathToFile (file)
 	return join(import.meta.dirname, file);
 }
 
+function isDebugging ()
+{
+	return process.env.DEBUG_ALTTPR_FOR_MY_PI === '1';
+}
+
 function setupWindow ()
 {
 	const window = new BrowserWindow({
@@ -41,7 +46,9 @@ function setupWindow ()
 	);
 
 	// Debugging.
-	if (process.env.DEBUG_ALTTPR_FOR_MY_PI === '1')
+	if (
+		isDebugging()
+	)
 	{
 		globalShortcut.register('f5', () =>
 		{

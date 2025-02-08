@@ -23,6 +23,7 @@ export default function App ()
 	const [settings, setSettings]           = useState(null);
 	const [isRandomizing, setIsRandomizing] = useState(false);
 	const [result, setResult]               = useState(null);
+	const [version, setVersion]             = useState(null);
 
 	// Effects.
 	useEffect(() =>
@@ -34,6 +35,7 @@ export default function App ()
 			{
 				setPresets(setup.presets);
 				setSettings(setup.settings);
+				setVersion(setup.version);
 				setProblem(error);
 			})
 			.catch(() =>
@@ -114,6 +116,9 @@ export default function App ()
 
 	return (
 		<div className="app">
+			{ version && <p className="app__version">
+				v{ version }
+			</p> }
 			{ contents }
 			{ settings && <Settings className="app__settings" { ...settings } /> }
 		</div>

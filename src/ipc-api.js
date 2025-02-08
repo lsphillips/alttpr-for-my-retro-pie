@@ -40,7 +40,7 @@ export function setupIpcApi ({
 		({ presets, settings, baseRom, targetDirectory } = config);
 
 		return ok({
-			presets, settings
+			presets, settings, version : app.getVersion()
 		});
 	});
 

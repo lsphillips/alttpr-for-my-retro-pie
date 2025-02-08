@@ -5,6 +5,7 @@
 		{
 			"name" : "Advanced Standard",
 			"goal" : "DefeatGanon",
+			"world" : "Standard",
 			"crystalsForGanon" : 7,
 			"crystalsForTower" : 7,
 			"itemAccessibility" : "Inventory",

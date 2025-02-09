@@ -1,3 +1,21 @@
+function onControllerReady (callback)
+{
+	if (
+		navigator.getGamepads().some(g => g !== null)
+	)
+	{
+		callback();
+	}
+	else
+	{
+		window.addEventListener('gamepadconnected', () =>
+		{
+			callback();
+
+		}, { once : true });
+	}
+}
+
 function getControllerState ()
 {
 	const [controller] = navigator.getGamepads();
@@ -59,6 +77,11 @@ function selectElementInFocus ()
 
 export function setupControllerNavigation ()
 {
+	onControllerReady(() =>
+	{
+		document.body.style.cursor = 'none';
+	});
+
 	let lastExecutedAt = 0;
 
 	requestAnimationFrame(function loop ()

@@ -7,14 +7,19 @@ const {
 
 contextBridge.exposeInMainWorld('alttpr', {
 
-	setup ()
+	getAppInfo ()
 	{
-		return ipcRenderer.invoke('setup');
+		return ipcRenderer.invoke('get-app-info');
 	},
 
-	randomize (preset)
+	getAppConfig ()
 	{
-		return ipcRenderer.invoke('randomize', preset);
+		return ipcRenderer.invoke('get-app-config');
+	},
+
+	randomizeRom (preset)
+	{
+		return ipcRenderer.invoke('randomize-rom', preset);
 	},
 
 	close (insight)

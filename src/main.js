@@ -63,23 +63,13 @@ function setupWindow ()
 	return window;
 }
 
-function getPathToConfigFile ()
-{
-	return join(
-		app.getPath('userData'), 'config.json'
-	);
-}
-
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 app.whenReady()
 
-	.then(async () =>
+	.then(() =>
 	{
-		setupIpcApi({
-			pathToConfig : getPathToConfigFile()
-		});
-
+		setupIpcApi();
 		setupWindow();
 	})
 

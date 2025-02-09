@@ -30,12 +30,17 @@ export default function App ()
 	{
 		setIsLoading(true);
 
-		window.alttpr.setup()
-			.then(([setup, error]) =>
+		window.alttpr.getAppInfo()
+			.then(info =>
 			{
-				setPresets(setup.presets);
-				setSettings(setup.settings);
-				setVersion(setup.version);
+				setVersion(info.version);
+
+				return window.alttpr.getAppConfig();
+			})
+			.then(([config, error]) =>
+			{
+				setPresets(config?.presets);
+				setSettings(config?.settings);
 				setProblem(error);
 			})
 			.catch(() =>
@@ -56,7 +61,7 @@ export default function App ()
 
 		try
 		{
-			const [rom, error] = await window.alttpr.randomize(preset);
+			const [rom, error] = await window.alttpr.randomizeRom(preset);
 
 			if (error)
 			{

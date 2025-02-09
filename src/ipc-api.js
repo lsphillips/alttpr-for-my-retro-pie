@@ -19,18 +19,25 @@ import randomize from './alttpr/randomizer.js';
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-export function setupIpcApi ({
-	pathToConfig
-})
+export function setupIpcApi ()
 {
 	let presets         = null;
 	let settings        = null;
 	let baseRom         = null;
 	let targetDirectory = null;
 
-	ipcMain.handle('setup', async () =>
+	ipcMain.handle('get-app-info', () =>
 	{
-		const [config, error] = await getConfig(pathToConfig);
+		return {
+			version : app.getVersion()
+		};
+	});
+
+	ipcMain.handle('get-app-config', async () =>
+	{
+		const [config, error] = await getConfig(
+			join(app.getPath('userData'), 'config.json')
+		);
 
 		if (error)
 		{
@@ -40,11 +47,11 @@ export function setupIpcApi ({
 		({ presets, settings, baseRom, targetDirectory } = config);
 
 		return ok({
-			presets, settings, version : app.getVersion()
+			presets, settings
 		});
 	});
 
-	ipcMain.handle('randomize', async (_, preset) =>
+	ipcMain.handle('randomize-rom', async (_, preset) =>
 	{
 		const [result, error] = await randomize(baseRom, {
 			...settings, ...preset

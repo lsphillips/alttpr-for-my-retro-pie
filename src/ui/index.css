@@ -9,6 +9,11 @@ body
 	background: #eee;
 }
 
+body
+{
+	cursor: none;
+}
+
 a
 {
 	color: #509010;

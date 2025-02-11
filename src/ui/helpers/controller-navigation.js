@@ -1,24 +1,17 @@
-function onControllerReady (callback)
+function showCursorWhenUsingMouse ()
 {
-	if (
-		navigator.getGamepads().some(g => g !== null)
-	)
+	document.body.addEventListener('mousemove', () =>
 	{
-		callback();
-	}
-	else
-	{
-		window.addEventListener('gamepadconnected', () =>
-		{
-			callback();
-
-		}, { once : true });
-	}
+		console.log('Hello World');
+		document.body.style.cursor = 'auto';
+	}, {
+		once : true
+	});
 }
 
 function getControllerState ()
 {
-	const [controller] = navigator.getGamepads();
+	const controller = navigator.getGamepads().find(c => c != null);
 
 	if (controller == null)
 	{
@@ -77,10 +70,7 @@ function selectElementInFocus ()
 
 export function setupControllerNavigation ()
 {
-	onControllerReady(() =>
-	{
-		document.body.style.cursor = 'none';
-	});
+	showCursorWhenUsingMouse();
 
 	let lastExecutedAt = 0;
 

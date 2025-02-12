@@ -13,15 +13,6 @@
 	padding: 0;
 	margin: 0;
 	text-align: center;
-
-	&::after
-	{
-		display: block;
-		width: 200px;
-		margin: 10px auto;
-		border-bottom: 2px solid #ccc;
-		content: '';
-	}
 }
 
 .presets__title-icon
@@ -32,6 +23,21 @@
 	width: 64px;
 	height: 64px;
 	margin: 0 auto;
+}
+
+.presets__container
+{
+	display: contents;
+
+	&::after,
+	&::before
+	{
+		display: block;
+		width: 200px;
+		margin: 10px auto;
+		border-bottom: 2px solid #ccc;
+		content: '';
+	}
 }
 
 .presets__items

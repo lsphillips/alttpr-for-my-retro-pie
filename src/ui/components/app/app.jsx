@@ -115,7 +115,7 @@ export default function App ()
 	else if (presets !== null)
 	{
 		contents = (
-			<Presets className="app__presets" presets={ presets } onSelect={ randomize } />
+			<Presets className="app__presets" presets={ presets } onSelect={ randomize } onCancel={ close } />
 		);
 	}
 

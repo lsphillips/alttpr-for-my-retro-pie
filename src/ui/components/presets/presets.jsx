@@ -4,6 +4,7 @@ import {
 } from 'react';
 import Preset from './preset.jsx';
 import Sprite from '../sprite/sprite.jsx';
+import Button from '../button/button.jsx';
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -14,9 +15,17 @@ import './presets.css';
 export default memo(function Presets ({
 	presets,
 	onSelect,
+	onCancel,
 	className
 })
 {
+	// Handlers.
+	function cancel ()
+	{
+		onCancel();
+	}
+
+	// Render.
 	return (
 		<div className={
 			classNames('presets', className)
@@ -39,6 +48,9 @@ export default memo(function Presets ({
 								))
 							}
 						</ul>
+						<Button className="presets__cancel" onClick={ cancel }>
+							Cancel
+						</Button>
 					</>
 					:
 					<p className="presets__no-items-message">

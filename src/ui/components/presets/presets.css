@@ -69,6 +69,11 @@
 	flex: 0 0 calc(20% - 8px);
 }
 
+.presets__cancel
+{
+	margin: 10px auto 0;
+}
+
 .presets__no-items-message
 {
 	padding: 0;

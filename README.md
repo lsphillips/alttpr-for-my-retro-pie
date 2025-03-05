@@ -4,11 +4,11 @@
 
 An [Electron](https://www.electronjs.org/) powered client for [ALTTPR](https://alttpr.com/) that is designed to work with [RetroPie](https://retropie.org.uk/) making randomizing ROMS for configured presets a couple of controller button presses.
 
-<p style="text-align: center">
+<div align="center">
   <img src="screenshots/selection-screen.png" alt="" width="45%" />
   &nbsp;
   <img src="screenshots/result-screen.png" alt="" width="45%" />
-</p>
+</div>
 
 ## Raspberry Pi Installation
 

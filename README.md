@@ -4,6 +4,12 @@
 
 An [Electron](https://www.electronjs.org/) powered client for [ALTTPR](https://alttpr.com/) that is designed to work with [RetroPie](https://retropie.org.uk/) making randomizing ROMS for configured presets a couple of controller button presses.
 
+<p style="text-align: center">
+  <img src="screenshots/selection-screen.png" alt="" width="45%" />
+  &nbsp;
+  <img src="screenshots/result-screen.png" alt="" width="45%" />
+</p>
+
 ## Raspberry Pi Installation
 
 > [!WARNING]
@@ -55,7 +61,7 @@ A preset is a collection of settings that define how the game should be randomiz
 | `world`                | No       | `Standard`, `Open`, `Inverted` `Retro`                                                                      | `Standard`    | [Refer to the documentation](https://alttpr.com/en/options#world_state)                |
 | `crystalsForGanon`     | No       | `0` - `7`                                                                                                   | `7`           | [Refer to the documentation](https://alttpr.com/en/options#ganon_open)                 |
 | `crystalsForTower`     | No       | `0` - `7`                                                                                                   | `7`           | [Refer to the documentation](https://alttpr.com/en/options#tower_open)                 |
-| `itemAccessibility`    | No       | `Inventory`, `Locations`,`Beatable`                                                                         | `Inventory`   | [Refer to the documentation](https://alttpr.com/en/options#accessibility)              |
+| `itemAccessibility`    | No       | `Inventory`, `Locations`, `Beatable`                                                                        | `Inventory`   | [Refer to the documentation](https://alttpr.com/en/options#accessibility)              |
 | `itemPlacement`        | No       | `Basic`, `Advanced`                                                                                         | `Basic`       | [Refer to the documentation](https://alttpr.com/en/options#item_placement)             |
 | `itemFunctionality`    | No       | `Normal`, `Hard`, `Expert`                                                                                  | `Normal`      | [Refer to the documentation](https://alttpr.com/en/options#item_functionality)         |
 | `itemPool`             | No       | `Normal`, `Hard`, `Expert`                                                                                  | `Normal`      | [Refer to the documentation](https://alttpr.com/en/options#item_pool)                  |

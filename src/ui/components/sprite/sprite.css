@@ -15,11 +15,11 @@
 
 .sprite--goal-defeat-ganon                                          { --x: 0px;    --y: 0px    }
 .sprite--goal-fast-ganon                                            { --x: -50px;  --y: 0px    }
-.sprite--goal-all-dungeons                                          { --x: -100px; --y: 0px    }
+.sprite--goal-ganon-triforce-hunt                                   { --x: -100px; --y: 0px    }
 .sprite--goal-master-sword-pedestal                                 { --x: -150px; --y: 0px    }
 .sprite--goal-triforce-hunt                                         { --x: -200px; --y: 0px    }
-.sprite--goal-ganon-triforce-hunt                                   { --x: -250px; --y: 0px    }
-.sprite--goal-completion                                            { --x: -300px; --y: 0p     }
+.sprite--goal-completion                                            { --x: -250px; --y: 0px    }
+.sprite--goal-all-dungeons                                          { --x: -300px; --y: 0px    }
 .sprite--ganon-requirement-0                                        { --x: 0px;    --y: -50px  }
 .sprite--ganon-requirement-1                                        { --x: -32px;  --y: -50px  }
 .sprite--ganon-requirement-2                                        { --x: -64px;  --y: -50px  }
@@ -41,7 +41,7 @@
 .sprite--dungeon-item-shuffle-maps-compasses-small-keys             { --x: -64px;  --y: -114px }
 .sprite--dungeon-item-shuffle-keysanity                             { --x: -96px;  --y: -114px }
 .sprite--hints-on                                                   { --x: 0px;    --y: -146px }
-.sprite--hints-off                                                  { --x: -64px;  --y: -146px }
+.sprite--hints-off                                                  { --x: -32px;  --y: -146px }
 .sprite--enemy-difficulty-default-health-default-damage             { --x: 0px;    --y: -178px }
 .sprite--enemy-difficulty-default-health-shuffled-damage            { --x: -32px;  --y: -178px }
 .sprite--enemy-difficulty-default-health-random-damage              { --x: -64px;  --y: -178px }

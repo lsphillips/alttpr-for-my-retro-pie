@@ -15,17 +15,9 @@ import './presets.css';
 export default memo(function Presets ({
 	presets,
 	onSelect,
-	onCancel,
 	className
 })
 {
-	// Handlers.
-	function cancel ()
-	{
-		onCancel();
-	}
-
-	// Render.
 	return (
 		<div className={
 			classNames('presets', className)
@@ -37,22 +29,17 @@ export default memo(function Presets ({
 							<Sprite className="presets__title-icon" name="choose" />
 							Select a randomization preset
 						</h2>
-						<div className="presets__container">
-							<ul className="presets__items">
-								{
-									presets.map(preset => (
-										<li className="presets__item" key={ preset.name }>
-											<Preset { ...preset } onSelect={
-												() => onSelect(preset)
-											} />
-										</li>
-									))
-								}
-							</ul>
-						</div>
-						<Button className="presets__cancel" onClick={ cancel }>
-							Cancel
-						</Button>
+						<ul className="presets__items">
+							{
+								presets.map(preset => (
+									<li className="presets__item" key={ preset.name }>
+										<Preset { ...preset } onSelect={
+											() => onSelect(preset)
+										} />
+									</li>
+								))
+							}
+						</ul>
 					</>
 					:
 					<p className="presets__no-items-message">

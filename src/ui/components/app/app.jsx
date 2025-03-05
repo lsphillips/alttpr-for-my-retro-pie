@@ -2,6 +2,7 @@ import {
 	useState,
 	useEffect
 } from 'react';
+import Closer from '../closer/closer.jsx';
 import Spinner from '../spinner/spinner.jsx';
 import Result from '../result/result.jsx';
 import Presets from '../presets/presets.jsx';
@@ -115,12 +116,13 @@ export default function App ()
 	else if (presets !== null)
 	{
 		contents = (
-			<Presets className="app__presets" presets={ presets } onSelect={ randomize } onCancel={ close } />
+			<Presets className="app__presets" presets={ presets } onSelect={ randomize } />
 		);
 	}
 
 	return (
 		<div className="app">
+			<Closer className="app__close" onClose={ close } />
 			{ version && <p className="app__version">
 				v{ version }
 			</p> }

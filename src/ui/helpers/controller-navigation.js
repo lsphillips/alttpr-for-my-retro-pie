@@ -2,7 +2,6 @@ function showCursorWhenUsingMouse ()
 {
 	document.body.addEventListener('mousemove', () =>
 	{
-		console.log('Hello World');
 		document.body.style.cursor = 'auto';
 	}, {
 		once : true
@@ -21,7 +20,9 @@ function getControllerState ()
 	return {
 		up     : controller.buttons[12].pressed,
 		down   : controller.buttons[13].pressed,
-		select : controller.buttons[1].pressed
+		a      : controller.buttons[1].pressed,
+		start  : controller.buttons[9].pressed,
+		select : controller.buttons[8].pressed
 	};
 }
 
@@ -68,7 +69,7 @@ function selectElementInFocus ()
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-export function setupControllerNavigation ()
+export function setupControllerNavigation (exit)
 {
 	showCursorWhenUsingMouse();
 
@@ -98,9 +99,13 @@ export function setupControllerNavigation ()
 						moveElementInFocus(1);
 						break;
 
-					case state.select :
+					case state.a :
 						selectElementInFocus();
 						break;
+
+					case state.select && state.start :
+						exit();
+						return;
 				}
 			}
 		}

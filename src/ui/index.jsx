@@ -12,7 +12,7 @@ import App from './components/app/app.jsx';
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-setupControllerNavigation();
+setupControllerNavigation(window.alttpr.close);
 
 createRoot(
 	document.getElementById('root')

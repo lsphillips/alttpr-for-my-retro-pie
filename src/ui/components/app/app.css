@@ -6,6 +6,13 @@
 	height: 100vh;
 }
 
+.app__close
+{
+	position: absolute;
+	top: 5px;
+	left: 10px;
+}
+
 .app__version
 {
 	position: absolute;
@@ -13,7 +20,9 @@
 	right: 10px;
 	padding: 0;
 	margin: 0;
-	color: #999;
+	font-size: 12px;
+	font-weight: bold;
+	color: #777;
 }
 
 .app__error

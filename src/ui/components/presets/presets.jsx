@@ -1,6 +1,8 @@
 import classNames from 'classnames';
 import {
-	memo
+	memo,
+	useRef,
+	useEffect
 } from 'react';
 import Preset from './preset.jsx';
 import Sprite from '../sprite/sprite.jsx';
@@ -18,6 +20,17 @@ export default memo(function Presets ({
 	className
 })
 {
+	// State.
+	const first = useRef(null);
+
+	// Effects.
+	useEffect(() =>
+	{
+		first.current?.focus();
+
+	}, [first]);
+
+	// Render.
 	return (
 		<div className={
 			classNames('presets', className)
@@ -31,9 +44,9 @@ export default memo(function Presets ({
 						</h2>
 						<ul className="presets__items">
 							{
-								presets.map(preset => (
+								presets.map((preset, i) => (
 									<li className="presets__item" key={ preset.name }>
-										<Preset { ...preset } onSelect={
+										<Preset { ...preset } ref={ i === 0 ? first : null } onSelect={
 											() => onSelect(preset)
 										} />
 									</li>

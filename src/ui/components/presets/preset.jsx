@@ -80,6 +80,7 @@ function getEnemyDifficulty (enemyHealth, enemyDamage)
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 export default memo(function Preset ({
+	ref,
 	name,
 	goal,
 	world,
@@ -107,7 +108,7 @@ export default memo(function Preset ({
 
 	// Render.
 	return (
-		<a href="" className="preset" onClick={ select } data-selectable>
+		<a href="" className="preset" onClick={ select } ref={ ref } data-selectable>
 			<article className="preset__info">
 				<Sprite className="preset__goal" name={
 					`goal-${ Settings[goal] }`

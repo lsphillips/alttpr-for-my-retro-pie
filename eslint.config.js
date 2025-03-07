@@ -6,7 +6,11 @@ import andFromWritingStupidWebApplications  from 'eslint-config-protect-me-from-
 
 export default [
 	{
-		ignores : ['src/views/assets/**/*']
+		ignores : [
+			'src/views/assets/**/*',
+			'build/**/*',
+			'packages/**/*'
+		]
 	},
 	...protectMeFromMyStupidity(),
 	...andFromWritingStupidWebApplications([

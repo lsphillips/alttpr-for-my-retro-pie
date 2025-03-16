@@ -31,7 +31,7 @@ Next, create a [configuration file](#configuration) and place it at this locatio
 Finally, you can run the installer by managing packages using `RetroPie-Setup` (it will be listed under experimental ports). Once installed, restart EmulationStation and you will then see `ALTTPR For My Retro Pie` under `Ports`.
 
 > [!TIP]
-> When you generate a randomized game ROM using a new preset (where its name is used in the ROM filename) it won't appear in your game list until you restart EmulationStart.
+> When you generate a randomized game ROM using a new preset (where its name is used in the ROM filename) it won't appear in your game list until you restart EmulationStation.
 
 ## Configuration
 

@@ -25,7 +25,7 @@ function configure_alttpr-for-my-retro-pie() {
 #!/bin/bash
 xset -dpms s off s noblank
 matchbox-window-manager -use_titlebar no -use_cursor no &
-/usr/bin/alttpr-for-my-retro-pie
+/usr/bin/alttpr-for-my-retro-pie && touch /tmp/es-restart && killall emulationstation
 _EOF_
 	chmod +x "$md_inst/$md_id.sh"
 

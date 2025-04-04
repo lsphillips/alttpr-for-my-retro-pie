@@ -31,16 +31,16 @@
 
     "devDependencies" :
     {
-        "esbuild" : "0.25.1",
-        "eslint" : "9.23.0",
+        "esbuild" : "0.25.2",
+        "eslint" : "9.24.0",
         "eslint-plugin-n" : "17.17.0",
         "eslint-config-protect-me-from-my-stupidity" : "15.0.0",
         "fs-extra" : "11.3.0",
-        "react" : "19.0.0",
-        "react-dom" : "19.0.0",
+        "react" : "19.1.0",
+        "react-dom" : "19.1.0",
         "classnames" : "2.5.1",
-        "@paulmillr/qr" : "0.3.0",
-        "electron" : "35.0.3",
+        "qr" : "0.4.0",
+        "electron" : "35.1.4",
         "@electron/packager" : "18.3.6"
     },
 

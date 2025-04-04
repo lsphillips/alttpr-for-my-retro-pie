@@ -4,7 +4,7 @@ import {
 	useState,
 	useEffect
 } from 'react';
-import encodeQR from '@paulmillr/qr';
+import encodeQR from 'qr';
 import Sprite from '../sprite/sprite.jsx';
 import Button from '../button/button.jsx';
 

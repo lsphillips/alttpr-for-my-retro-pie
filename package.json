@@ -31,7 +31,7 @@
 
     "devDependencies" :
     {
-        "esbuild" : "0.25.8",
+        "esbuild" : "0.25.9",
         "eslint" : "9.33.0",
         "eslint-plugin-n" : "17.21.3",
         "eslint-config-protect-me-from-my-stupidity" : "15.0.0",

@@ -33,7 +33,7 @@
     {
         "esbuild" : "0.25.9",
         "eslint" : "9.35.0",
-        "eslint-plugin-n" : "17.21.3",
+        "eslint-plugin-n" : "17.22.0",
         "eslint-config-protect-me-from-my-stupidity" : "15.1.0",
         "fs-extra" : "11.3.1",
         "react" : "19.1.1",

@@ -40,7 +40,7 @@
         "classnames" : "2.5.1",
         "qr" : "0.5.2",
         "electron" : "38.1.2",
-        "@electron/packager" : "18.4.4"
+        "@electron/packager" : "19.0.2"
     },
 
     "optionalDependencies" :
